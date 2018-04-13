@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<title>IN YOUR SKIN!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+    background-image: url('https://skincomfortable.github.io/inmyskin/paper.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+button {
+    background-color: #f44336;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    }
+</style>
+<body>
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-topleft w3-padding-large w3-xlarge">
+    <t onclick="menu()">Menu</t>
+      <t>|</t>
+      <t>Store</t>
+      <t>|</t>
+      <t>Premium</t>
+  </div>
+  <div class="w3-display-middle">
+    <h1 class="w3-jumbo w3-animate-top">In Your Skin!</h1>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <p class="w3-large w3-center">Buy premium to get normal cursor!</p>
+    <button onclick="survay()">Fill out a quick survay!</button>
+  </div>
+  <div class="w3-display-bottomleft w3-padding-large">
+  </div>
+</div>
+
+</body>
+</html>
+<script>
+document.body.style.cursor = "wait";
+function survay(){
+    window.location = "https://skincomfortable.github.io/inmyskin/form";
+}
+function menu(){
+    window.location = "https://skincomfortable.github.io/inmyskin/menu";
+}
+</script>
