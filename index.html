@@ -1,46 +1,36 @@
-<h1>Comfortable in someone else's skin!</h1>
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <style>
-h1 {
-    text-align: center;
-    color: red;
-}
-para1 {
-    text-align: center;
-    }
-body {
-    background-image: url("paper.jpg");
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+    background-image: url('https://skincomfortable.github.io/inmyskin/paper.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
 }
 </style>
-<html lang="en">
-  <head>
-    <meta name="google-signin-scope" content="profile email">
-    <meta name="google-signin-client_id" content="217107342964-simkq82albb7k5qb6a1s82v7rh9r5s4v.apps.googleusercontent.com">
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-  </head>
-  <body>
-    <div id="para1" class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
-    <script>
-      function onSignIn(googleUser) {
-        // Useful data for your client-side scripts:
-        var profile = googleUser.getBasicProfile();
-        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
-        console.log('Full Name: ' + profile.getName());
-        console.log('Given Name: ' + profile.getGivenName());
-        console.log('Family Name: ' + profile.getFamilyName());
-        console.log("Image URL: " + profile.getImageUrl());
-        console.log("Email: " + profile.getEmail());
-          var ID = profile.getId());
-          var Fname = profile.getName());
-          var Gname = profile.getGivenName());
-          var FAname = profile.getFamilyName());
-          var profile = profile.getImageUrl());
-          var Email = profile.getEmail());
-        // The ID token you need to pass to your backend:
-        var id_token = googleUser.getAuthResponse().id_token;
-        console.log("ID Token: " + id_token);
-      };
-    </script>
-  </body>
+<body>
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-topleft w3-padding-large w3-xlarge">
+    <t>Menu</t>
+  </div>
+  <div class="w3-display-middle">
+    <h1 class="w3-jumbo w3-animate-top">In Your Skin!</h1>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <p class="w3-large w3-center">Welcome!</p>
+  </div>
+  <div class="w3-display-bottomleft w3-padding-large">
+  </div>
+</div>
+
+</body>
 </html>
 <button onclick="survay()">Fill out a quick survay!</button>
 <script>
