@@ -45,7 +45,7 @@ button {
     <p class="w3-large w3-center">Buy premium to get exclusive benifits including a normal cursor, your soul back, and much more!</p>
     <t>Card Number:</t> <input type="text" name="card">
     <t>CVC:</t> <input type="text" name="CVC">
-      <button onclick="Buy">Submit</button>
+      <button onclick="buy()">Submit</button>
   </div>
   <div class="w3-display-bottomleft w3-padding-large">
   </div>
@@ -66,5 +66,14 @@ function premium(){
 }
 function home(){
     window.location = "https://skincomfortable.github.io/inmyskin/";
+}
+function buy(){
+    setCookie(permium, 1, 30)
+}
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires="+ d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 </script>
